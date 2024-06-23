@@ -1,0 +1,288 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://developers-test.pinpointhq.com/api/v1/applications/8863817?extra_fields%5Bapplications%5D=attachments
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - application/vnd.api+json
+      User-Agent:
+      - Ruby
+      Host:
+      - developers-test.pinpointhq.com
+      X-Api-Key:
+      - "<PINPOINT_API_KEY>"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sun, 23 Jun 2024 21:37:51 GMT
+      Content-Type:
+      - application/vnd.api+json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Etag:
+      - W/"e053d16d1156dd26d6295b1325aa69e4"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Security-Policy-Report-Only:
+      - 'default-src ''self'' https:; font-src ''self'' https: data:; img-src ''self''
+        https: data:; object-src ''none''; media-src ''self'' https: blob:; script-src
+        ''self'' https: ''strict-dynamic'' ''nonce-a67dfb6efcc2e5e87bfa9f1d011139c2'';
+        style-src ''self'' https: ''unsafe-inline''; connect-src ''self'' https: wss:;
+        base-uri ''none''; report-uri /csp_violation_reports'
+      Set-Cookie:
+      - LSW_WEB=LSW_WEB5; path=/
+      - _pinpoint_session=nRUfsTp1OjONu08nyCtCD9%2FUgFj%2Bx27TmiYxT2vL2VM7RHVTOvklR4T0caCubgGs4l1eN6b1WNk4OKoPsJyOwvMT1itw4Xc2D47SQJUEpHPJarRdF65MyyJpJ84NguEn4XTaaNmOFhed4ezdwIQw%2BsnxOngPFs%2BUBBbUZW1fJc%2BuTVK6W89JlVslbmMEbc449JmtkqLJs%2FCwCsTK8vQ1--o1Z%2BNBsQeLs6qjTJ--G5CmhO%2BqlM8qRlP1jr5CRw%3D%3D;
+        domain=.pinpointhq.com; path=/; expires=Mon, 24 Jun 2024 09:37:51 GMT; secure;
+        HttpOnly; SameSite=None
+      X-Request-Id:
+      - 2592e3c6-ef1b-45ba-bad2-e6e383e675a4
+      X-Runtime:
+      - '0.042015'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Powered-By:
+      - cloud66
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"8863817","type":"applications","attributes":{"created_at":"2024-02-02T17:49:36+00:00","updated_at":"2024-02-19T16:19:44+00:00","hired_at":"2024-02-19T16:17:50+00:00","internal_candidate":true,"job_id":"174766","locale":"en","stage_id":"1539029","rejected_at":null,"phone_iso2":null,"start_on":"2024-02-26","is_demo":true,"first_name":"Elijah","last_name":"Moen","email":"elijah.moen@pinpoint.dev","phone":"+8524345377029","date_of_birth":"1976-12-17","linkedin_url":null,"summary":"This
+        is an example application designed to help demonstrate Pinpoint to the team
+        at Developer Acme. Please completely disregard this application as it is for
+        demonstrative purposes only and will be automatically deleted in due course.","address1":"10838
+        Kozey Drives","address2":"Allena Squares","town":"South Theresaview","country":"Australia","postcode":"48063-8069","preferred_pronouns":"(He/They)","channel_source":"Employee
+        referral","full_name":"Elijah Moen","national_identifier":null,"channel":"manual","concealed":false,"attachments":[{"context":"cv","filename":"tom_hacquoil.pdf","url":"https://pinpointhq.com/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBeXFhK0E9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--fd1e83ad4ffc731491feac9e1f6e92725d74dbf2/tom_hacquoil.pdf"},{"context":"pdf_cv","filename":"tom_hacquoil.pdf","url":"https://pinpointhq.com/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBeXFhK0E9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--fd1e83ad4ffc731491feac9e1f6e92725d74dbf2/tom_hacquoil.pdf"}]},"relationships":{"job":{"meta":{"included":false}},"stage":{"meta":{"included":false}},"onboarding_application":{"meta":{"included":false}},"offers":{"meta":{"included":false}},"answers":{"meta":{"included":false}},"custom_attributes":{"meta":{"included":false}},"scorecard_ratings":{"meta":{"included":false}},"scorecard_notes":{"meta":{"included":false}},"scorecard_answers":{"meta":{"included":false}},"comments":{"meta":{"included":false}}}},"meta":{}}'
+  recorded_at: Sun, 23 Jun 2024 21:37:51 GMT
+- request:
+    method: post
+    uri: https://api.hibob.com/v1/people
+    body:
+      encoding: UTF-8
+      string: '{"work":{"site":"New York (demo)","startDate":"2024-06-24"},"firstName":"Elijah","surname":"Moen","email":"elijah.moen@pinpoint.dev"}'
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - application/json
+      User-Agent:
+      - Ruby
+      Host:
+      - api.hibob.com
+      Authorization:
+      - "<HI_BOB_AUTHORIZATION>"
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 23 Jun 2024 21:37:52 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '3646'
+      Connection:
+      - keep-alive
+      Referrer-Policy:
+      - origin-when-cross-origin, strict-origin-when-cross-origin
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - master-only
+      X-Ratelimit-Limit:
+      - '50'
+      X-Ratelimit-Remaining:
+      - '49'
+      X-Ratelimit-Reset:
+      - '1719178731'
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Set-Cookie:
+      - __cf_bm=_EqkKhX6xYwMTVm4v4Rumoz8xXuqVSuUg6OtdTyM.6I-1719178672-1.0.1.1-PwTfVU1Z6zGjFyCumlR67RLSqsSWXY1QYZZ8B.VB5dVjGqyiCAC4YmbSFGRXkAGKxu9OxzsWe.L1J3C0FwbLOw;
+        path=/; expires=Sun, 23-Jun-24 22:07:52 GMT; domain=.hibob.com; HttpOnly;
+        Secure; SameSite=None
+      Strict-Transport-Security:
+      - max-age=6
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 89879f29fdf94d8d-FRA
+    body:
+      encoding: ASCII-8BIT
+      string: '{"fullName":"Elijah Moen","creationDate":"2024-06-23","displayName":"Elijah
+        Moen","payroll":{"additionalPensionContribution":null,"timeSinceLastSalaryChange":null,"salary":{"monthlyPayment":null,"payPeriod":null,"yearlyPayment":null,"payment":{"currency":null},"activeEffectiveDate":null,"payFrequency":null},"taxCode":null,"entitlement":{"Season
+        ticket loans":{"amount":null},"Cycle to work":{"amount":null},"Company Car":{"amount":null},"Childcare
+        vouchers":{"amount":null},"Lunch vouchers":{"amount":null}},"deduction":{"Season
+        ticket loans":{"amount":null},"Cycle to work":{"amount":null},"Company Car":{"amount":null},"Childcare
+        vouchers":{"amount":null},"Lunch vouchers":{"amount":null}},"employment":{"hoursInDayNotWorked":9,"standardWorkingPattern":null,"fte":100,"type":null,"flsaCode":null,"actualWorkingPattern":{"workingPatternType":"hourly","days":{"sunday":0,"tuesday":9,"wednesday":9,"monday":9,"friday":9,"thursday":9,"saturday":0},"hoursPerDay":9,"workingPatternId":363430},"contract":"Full
+        time","calendarId":null,"salaryPayType":null,"personalWorkingPatternType":null,"workingPattern":null,"activeEffectiveDate":"2024-06-24","weeklyHours":45,"siteWorkingPattern":{"workingPatternType":"hourly","days":{"sunday":0,"tuesday":9,"wednesday":9,"monday":9,"friday":9,"thursday":9,"saturday":0},"hoursPerDay":9,"workingPatternId":363430}},"variable":{"Executive
+        bonus":{"companyPercent":null,"amount":null,"paymentPeriod":null,"individualPercent":null,"departmentPercent":null},"Bonus":{"companyPercent":null,"amount":null,"paymentPeriod":null,"individualPercent":null,"departmentPercent":null},"Commission":{"companyPercent":null,"amount":null,"paymentPeriod":null,"individualPercent":null,"departmentPercent":null}}},"personal":{"communication":{"skypeUsername":null,"slackUsername":null}},"state":"uninvited","creationDateTime":"2024-06-23T21:37:51.80652","employee":{"positionId":null,"payrollManager":null,"hrbp":null,"itAdmin":null,"jobLevelId":null,"buddy":null},"work":{"shortStartDate":"06-24","startDate":"2024-06-24","manager":null,"workPhone":null,"tenureDuration":null,"durationOfEmployment":null,"reportsToIdInCompany":null,"employeeIdInCompany":null,"reportsTo":null,"workMobile":null,"indirectReports":null,"department":null,"siteId":2474159,"tenureDurationYears":0,"tenureYears":null,"isManager":false,"title":null,"site":"New
+        York (Demo)","originalStartDate":"2024-06-24","activeEffectiveDate":"2024-06-24","directReports":null,"secondLevelManager":null,"daysOfPreviousService":0,"yearsOfService":0},"avatarUrl":null,"secondName":null,"about":{"foodPreferences":[],"socialData":{"linkedin":null,"twitter":null,"facebook":null},"superpowers":[],"hobbies":[],"about":null,"avatar":"https://media-process.hibob.com/image/upload/b_rgb:C85C8A/co_white,l_text:Arial_50_bold:EM,g_center/hibob/default-avatar/transparent_avatar.png?token=X19jbGRfdG9rZW5fXz1leHA9NDgzNDYyODAxNH5hY2w9KiUyZmhpYm9iJTJmZGVmYXVsdC1hdmF0YXIlMmZ0cmFuc3BhcmVudF9hdmF0YXIucG5nKn5obWFjPThlYWExNDdjOWEzNWQwZjg3ZmQ1YmJkZTRiYTA4ZjE1YzExZjYzNWQxMmVkNzRmZGE1NmIwZDU5MDg4YTJmOGE=&vendor=cloudinary"},"companyId":631640,"email":"elijah.moen@pinpoint.dev","surname":"Moen","home":{"mobilePhone":null,"privateEmail":null,"privatePhone":null},"coverImageUrl":"https://media-process.hibob.com/image/upload/v1/hibob/public-image/cover/white_default_cover_image.png?token=X19jbGRfdG9rZW5fXz1leHA9MTczMDgwMTQ2NX5hY2w9KiUyZmhpYm9iJTJmcHVibGljLWltYWdlJTJmY292ZXIlMmZ3aGl0ZV9kZWZhdWx0X2NvdmVyX2ltYWdlLnBuZyp+aG1hYz0wMDQ5MGJkNjQ5N2Y2ZDQ5OGY5ZTVmZTMxYTYwNTI1NDA4ZTVhOGE4YWFmMWU3ZTZjYzVkNzlmNzVjODA3YTkw&vendor=cloudinary","id":"3397039371856118302","firstName":"Elijah"}'
+  recorded_at: Sun, 23 Jun 2024 21:37:52 GMT
+- request:
+    method: post
+    uri: https://api.hibob.com/v1/docs/people/3397039371856118302/shared
+    body:
+      encoding: UTF-8
+      string: '{"documentName":"cv_pdf","documentUrl":"https://pinpointhq.com/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBeXFhK0E9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--fd1e83ad4ffc731491feac9e1f6e92725d74dbf2/tom_hacquoil.pdf"}'
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - application/json
+      User-Agent:
+      - Ruby
+      Host:
+      - api.hibob.com
+      Authorization:
+      - "<HI_BOB_AUTHORIZATION>"
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 23 Jun 2024 21:37:53 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '350'
+      Connection:
+      - keep-alive
+      Content-Security-Policy:
+      - default-src 'self'; script-src 'self' 'unsafe-inline' ; style-src 'self' 'unsafe-inline'
+      Referrer-Policy:
+      - origin-when-cross-origin, strict-origin-when-cross-origin
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Permitted-Cross-Domain-Policies:
+      - master-only
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Set-Cookie:
+      - __cf_bm=9I_XZTcd8sY2ceBOXZVNBq1txvbNKkZlFnKVcCYTTgI-1719178673-1.0.1.1-fdbGu9GaYA367dcBkPHHcdbuM.NIpqNzy7bu9WWYWjW.15RdtOhyRXhBxX4e1oAQhvVZNOyU5uHD9_36k2__.A;
+        path=/; expires=Sun, 23-Jun-24 22:07:53 GMT; domain=.hibob.com; HttpOnly;
+        Secure; SameSite=None
+      Strict-Transport-Security:
+      - max-age=6
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 89879f2ee9812ba8-FRA
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":"15584262","employeeId":"3397039371856118302","uploadedById":"SERVICE-11334","name":"cv_pdf","creationDate":"2024-06-23T21:37:53.720473","status":"Created","tags":[],"folderId":1047097,"mimeType":"application/pdf","fileId":20594580,"documentName":"cv_pdf","owner":{"id":"3397039371856118302"},"actionRequestDate":null,"actionCompleteDate":null}'
+  recorded_at: Sun, 23 Jun 2024 21:37:53 GMT
+- request:
+    method: post
+    uri: https://developers-test.pinpointhq.com/api/v1/comments
+    body:
+      encoding: UTF-8
+      string: '{"data":{"attributes":{"body_text":"Record created with ID: 3397039371856118302"},"relationships":{"commentable":{"data":{"type":"applications","id":"8863817"}}},"type":"comments"}}'
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - application/vnd.api+json
+      User-Agent:
+      - Ruby
+      Host:
+      - developers-test.pinpointhq.com
+      X-Api-Key:
+      - "<PINPOINT_API_KEY>"
+      Content-Type:
+      - application/vnd.api+json
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sun, 23 Jun 2024 21:37:54 GMT
+      Content-Type:
+      - application/vnd.api+json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Etag:
+      - W/"4639bf7306a32d063a3e0fa4d8f86c37"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Security-Policy-Report-Only:
+      - 'default-src ''self'' https:; font-src ''self'' https: data:; img-src ''self''
+        https: data:; object-src ''none''; media-src ''self'' https: blob:; script-src
+        ''self'' https: ''strict-dynamic'' ''nonce-a95a84b1db31244742c2394b5ef90f08'';
+        style-src ''self'' https: ''unsafe-inline''; connect-src ''self'' https: wss:;
+        base-uri ''none''; report-uri /csp_violation_reports'
+      Set-Cookie:
+      - LSW_WEB=LSW_WEB5; path=/
+      - _pinpoint_session=rUMF24eAvbdbV4pP5M%2FpxSbyhMrGCNuX7XmJ9wyNwZp8XA%2FksRN5SMi0LgX2cm40TQXfL8F6NsiM9HhuVgtCemgy3%2FxlKxqFSc0xB1yeYPXmzoo9UnEOviwqiqEtiG7LDBNtq0hflg8tqCoNB2Q%2FocTtaiU4Hnjoi7%2FHzKDixa8IFJCXBukG3gwWiKS4N46Z1TMv55sc1wpbyFK%2FDklY6pE%2BTDDGewBmwHCDX7z6VX06rtgFVeyScz2FYoj%2FgfNfC5%2B5--DZD3AZ0mtD52LxxB--WGaFu77WMzLZtVipb4VrkQ%3D%3D;
+        domain=.pinpointhq.com; path=/; expires=Mon, 24 Jun 2024 09:37:54 GMT; secure;
+        HttpOnly; SameSite=None
+      X-Request-Id:
+      - aa974221-5a1b-411b-827d-3b4a5f9c5a97
+      X-Runtime:
+      - '0.111183'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Powered-By:
+      - cloud66
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"3420241","type":"comments","attributes":{"body_text":"Record
+        created with ID: 3397039371856118302","commentable_id":"8863817","commentable_type":"Application","created_at":"2024-06-23T21:37:54+00:00","private_comment":false,"updated_at":"2024-06-23T21:37:54+00:00","user_id":"95960"},"relationships":{"user":{"meta":{"included":false}},"commentable":{"data":{"type":"applications","id":"8863817"}}}},"included":[{"id":"8863817","type":"applications","attributes":{"created_at":"2024-02-02T17:49:36+00:00","updated_at":"2024-02-19T16:19:44+00:00","hired_at":"2024-02-19T16:17:50+00:00","internal_candidate":true,"job_id":"174766","locale":"en","stage_id":"1539029","rejected_at":null,"phone_iso2":null,"start_on":"2024-02-26","is_demo":true,"first_name":"Elijah","last_name":"Moen","email":"elijah.moen@pinpoint.dev","phone":"+8524345377029","date_of_birth":"1976-12-17","linkedin_url":null,"summary":"This
+        is an example application designed to help demonstrate Pinpoint to the team
+        at Developer Acme. Please completely disregard this application as it is for
+        demonstrative purposes only and will be automatically deleted in due course.","address1":"10838
+        Kozey Drives","address2":"Allena Squares","town":"South Theresaview","country":"Australia","postcode":"48063-8069","preferred_pronouns":"(He/They)","channel_source":"Employee
+        referral","full_name":"Elijah Moen","national_identifier":null,"channel":"manual","concealed":false},"relationships":{"job":{"meta":{"included":false}},"stage":{"meta":{"included":false}},"onboarding_application":{"meta":{"included":false}},"offers":{"meta":{"included":false}},"answers":{"meta":{"included":false}},"custom_attributes":{"meta":{"included":false}},"scorecard_ratings":{"meta":{"included":false}},"scorecard_notes":{"meta":{"included":false}},"scorecard_answers":{"meta":{"included":false}},"comments":{"meta":{"included":false}}}}],"meta":{}}'
+  recorded_at: Sun, 23 Jun 2024 21:37:54 GMT
+recorded_with: VCR 6.2.0
