@@ -36,6 +36,8 @@ module Services
     attr_writer :error, :execution_details
 
     def fetch_pinpoint_application_details(application_id)
+      Rails.logger.info(">> application_id: #{application_id} | Fetching application details")
+
       response = ApiClients::Pinpoint::Client.fetch_application(id: application_id)
       check_response(response, 200)
 
@@ -55,6 +57,7 @@ module Services
     end
 
     def create_hi_bob_employee(new_employee_params)
+      Rails.logger.info(">> application_id: #{application_id} | Creating employee @HiBob")
       response = ApiClients::HiBob::Client.create_new_employee(**new_employee_params)
       check_response(response, 200)
 
@@ -72,7 +75,7 @@ module Services
     end
 
     def add_cv_to_employee(employee_id, cv_url)
-      Rails.logger.info('Adding CV to employee @Hibob')
+      Rails.logger.info(">> application_id: #{application_id} | Adding CV to Employee @HiBob")
 
       response = ApiClients::HiBob::Client.add_public_document_to_employee(
         employee_id:,
@@ -86,7 +89,7 @@ module Services
     end
 
     def add_comment_to_pinpoint_application(application_id, new_employee_id)
-      Rails.logger.info("Adding Comment to application #{application_id}")
+      Rails.logger.info(">> application_id: #{application_id} | Adding comment to application @Pinpoint")
 
       response = ApiClients::Pinpoint::Client.add_comment_to_application(
         application_id:,
