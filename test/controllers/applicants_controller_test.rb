@@ -6,12 +6,12 @@ class WebhooksControllerTest < ActionDispatch::IntegrationTest
   include ActiveJob::TestHelper
 
   def setup
-    @webhook = load_test_fixture('applicant_hired.json').to_json
+    @payload = load_test_fixture('applicant_hired.json').to_json
   end
 
   test 'should consume webhook, create received_webhook record and enqueue job' do
     assert_difference 'ReceivedWebhook.count' do
-      post webhooks_url, params: @webhook, headers: { 'Content-Type': 'application/json' }
+      post webhooks_url, params: @payload, headers: { 'Content-Type': 'application/json' }
     end
     assert_enqueued_jobs 1
     assert_response :ok
@@ -19,7 +19,7 @@ class WebhooksControllerTest < ActionDispatch::IntegrationTest
 
   test 'should not consume webhook, when verification fails' do
     assert_no_difference 'ReceivedWebhook.count' do
-      post webhooks_url(fail_verification: 1), params: @webhook,
+      post webhooks_url(fail_verification: 1), params: @payload,
                                                           headers: { 'Content-Type': 'application/json' }
     end
     assert_enqueued_jobs 0
@@ -29,7 +29,7 @@ class WebhooksControllerTest < ActionDispatch::IntegrationTest
   test 'should enqueue only one job despite multiple same requests' do
     assert_difference 'ReceivedWebhook.count', 1 do
       2.times do
-        post webhooks_url, params: @webhook, headers: { 'Content-Type': 'application/json' }
+        post webhooks_url, params: @payload, headers: { 'Content-Type': 'application/json' }
       end
     end
 
