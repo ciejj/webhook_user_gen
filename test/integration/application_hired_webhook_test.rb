@@ -3,7 +3,7 @@
 require 'test_helper'
 require 'json'
 
-class MyControllerTest < ActionDispatch::IntegrationTest
+class ApplicationHiredWebhookTest < ActionDispatch::IntegrationTest
   include ActiveJob::TestHelper
 
   test 'should process the webhook, perform external calls and update received webhook object' do
