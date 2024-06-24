@@ -38,6 +38,6 @@ class WebhookHandlerJob < ApplicationJob
                                       error: create_new_employee_service.error)
     end
 
-    received_webhook.update!(status: :processed)
+    received_webhook.update!(status: :processed, execution_details: create_new_employee_service.execution_details)
   end
 end

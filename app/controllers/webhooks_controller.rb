@@ -7,6 +7,7 @@ class WebhooksController < ActionController::API
   # curl -X POST http://localhost:3000/webhooks -H "Content-Type: application/json" -d '{"event": "application_hired"}'
   def create
     return head :bad_request unless verify_request
+
     received_webhook = ReceivedWebhook.find_or_initialize_by(payload:)
 
     if received_webhook.new_record?
@@ -25,6 +26,7 @@ class WebhooksController < ActionController::API
   end
 
   def payload
-    @payload ||= request.body.read
+    parsed = JSON.parse(request.body.read)
+    JSON.generate(parsed)
   end
 end
