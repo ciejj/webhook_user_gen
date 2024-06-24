@@ -10,12 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_06_22_164154) do
+ActiveRecord::Schema[7.1].define(version: 2024_06_24_154050) do
   create_table "received_webhooks", force: :cascade do |t|
     t.string "status", default: "pending"
     t.text "payload"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.text "error"
+    t.text "execution_details"
   end
 
 end

@@ -1,24 +1,16 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Architectural decisions
+- why rails (minimal verison, api only most o the things built in)
+- why job processing (we want to process incoming webhooks really fast, so we can return status)
+- business logic is present in the service file
+- communication with apis has been implemented in separate classes
+- tests are using vcr (extra caution with credentials) which is covering happy and failed path
 
-Things you may want to cover:
 
-* Ruby version
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+TODO:
+- trigger job after receiving webhook
+- add test for job (simple one calling service, or not)
+- add E2E test
+- finish this document

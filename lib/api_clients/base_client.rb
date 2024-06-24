@@ -6,6 +6,8 @@ require 'net/http'
 module ApiClients
   class BaseClient
     class << self
+      MAX_RETRIES = 3
+
       def send_get_request(url, headers)
         uri = URI(url)
 
@@ -15,7 +17,7 @@ module ApiClients
         request = Net::HTTP::Get.new(uri)
         headers.each { |key, value| request[key] = value }
 
-        http.request(request)
+        perform_request_with_retries(http, request)
       end
 
       def send_post_request(url, headers, body = nil)
@@ -28,7 +30,22 @@ module ApiClients
         headers.each { |key, value| request[key] = value }
         request.body = body.to_json if body
 
-        http.request(request)
+        perform_request_with_retries(http, request)
+      end
+
+      private
+
+      def perform_request_with_retries(http, request)
+        attempts = 0
+        begin
+          attempts += 1
+          http.request(request)
+        rescue Net::OpenTimeout, Net::ReadTimeout => e
+          raise e unless attempts < MAX_RETRIES
+
+          sleep(0.5 * attempts)
+          retry
+        end
       end
     end
   end

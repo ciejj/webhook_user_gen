@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://developers-test.pinpointhq.com/api/v1/applications/1234567890?extra_fields%5Bapplications%5D=attachments
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - application/vnd.api+json
+      User-Agent:
+      - Ruby
+      Host:
+      - developers-test.pinpointhq.com
+      X-Api-Key:
+      - "<PINPOINT_API_KEY>"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sun, 23 Jun 2024 22:38:26 GMT
+      Content-Type:
+      - application/vnd.api+json; charset=UTF-8
+      Content-Length:
+      - '106'
+      X-Request-Id:
+      - 38108ef8-dc2b-41ed-a344-f9ad2c6a3f9c
+      X-Runtime:
+      - '0.180109'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Set-Cookie:
+      - LSW_WEB=LSW_WEB7; path=/
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":"not_found","status":"404","title":"Not Found","detail":"Specified
+        Record Not Found"}]}'
+  recorded_at: Sun, 23 Jun 2024 22:38:26 GMT
+recorded_with: VCR 6.2.0

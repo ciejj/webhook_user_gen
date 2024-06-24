@@ -26,8 +26,9 @@ group :development, :test do
 end
 
 group :test do
-  gem "vcr"
-  gem "webmock"
+  gem "vcr", require: false
+  gem "webmock", require: false
+  gem "mocha", require: false
 end
 
 

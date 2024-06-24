@@ -1,0 +1,128 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://developers-test.pinpointhq.com/api/v1/applications/8863801?extra_fields%5Bapplications%5D=attachments
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - application/vnd.api+json
+      User-Agent:
+      - Ruby
+      Host:
+      - developers-test.pinpointhq.com
+      X-Api-Key:
+      - "<PINPOINT_API_KEY>"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sun, 23 Jun 2024 23:12:26 GMT
+      Content-Type:
+      - application/vnd.api+json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Etag:
+      - W/"b89ff5ed3c032fad92254bfd5d02b973"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Security-Policy-Report-Only:
+      - 'default-src ''self'' https:; font-src ''self'' https: data:; img-src ''self''
+        https: data:; object-src ''none''; media-src ''self'' https: blob:; script-src
+        ''self'' https: ''strict-dynamic'' ''nonce-a4fb56afe12541a17988019d3a5d3914'';
+        style-src ''self'' https: ''unsafe-inline''; connect-src ''self'' https: wss:;
+        base-uri ''none''; report-uri /csp_violation_reports'
+      Set-Cookie:
+      - LSW_WEB=LSW_WEB3; path=/
+      - _pinpoint_session=YYCZnz5QAPwEG3rvwskGOKlyKkGFkO7HqxQJNWqbUBngI7Qt0lo5CnqC2hoYrPEJXdS7CJ9T%2FPb3s%2BC802GhJVfq335NSN2k44LWPtKNp5v73DZPorYfmeVaNc4Oo3LObyXgzFBI11oLSr2%2FVnQaL8JMklMQfcd54f%2FSb4lnMUSFFgMP8vNBBDhKig5cWwGXBRMLNKiMU5OJY9foQq3F--jsXsj91dZsN%2FFARW--7EiYivtcx3crmNiQF%2BXI1Q%3D%3D;
+        domain=.pinpointhq.com; path=/; expires=Mon, 24 Jun 2024 11:12:26 GMT; secure;
+        HttpOnly; SameSite=None
+      X-Request-Id:
+      - 920e1a6b-58a8-42b3-bd89-e93ff31ffc20
+      X-Runtime:
+      - '0.042411'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Powered-By:
+      - cloud66
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"8863801","type":"applications","attributes":{"created_at":"2024-01-30T04:29:36+00:00","updated_at":"2024-04-17T19:30:21+00:00","hired_at":null,"internal_candidate":true,"job_id":"174766","locale":"en","stage_id":"1539023","rejected_at":null,"phone_iso2":"TH","start_on":null,"is_demo":true,"first_name":"Billie","last_name":"Pagac","email":"billie.pagac@pinpoint.dev","phone":"+667626768275414","date_of_birth":"1990-11-03","linkedin_url":null,"summary":"This
+        is an example application designed to help demonstrate Pinpoint to the team
+        at Developer Acme. Please completely disregard this application as it is for
+        demonstrative purposes only and will be automatically deleted in due course.","address1":"562
+        Anglea Highway","address2":"Mante Inlet","town":"Lake Kallie","country":"Macao","postcode":"63358","preferred_pronouns":"(She/They)","channel_source":"Indeed","full_name":"Billie
+        Pagac","national_identifier":null,"channel":"social","concealed":false,"attachments":[{"context":"cv","filename":"tom_hacquoil.pdf","url":"https://pinpointhq.com/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBeG1hK0E9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--cab286d9864beb246b31cb3d5d0191e072fdd9d9/tom_hacquoil.pdf"},{"context":"pdf_cv","filename":"tom_hacquoil.pdf","url":"https://pinpointhq.com/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBeG1hK0E9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--cab286d9864beb246b31cb3d5d0191e072fdd9d9/tom_hacquoil.pdf"}]},"relationships":{"job":{"meta":{"included":false}},"stage":{"meta":{"included":false}},"onboarding_application":{"meta":{"included":false}},"offers":{"meta":{"included":false}},"answers":{"meta":{"included":false}},"custom_attributes":{"meta":{"included":false}},"scorecard_ratings":{"meta":{"included":false}},"scorecard_notes":{"meta":{"included":false}},"scorecard_answers":{"meta":{"included":false}},"comments":{"meta":{"included":false}}}},"meta":{}}'
+  recorded_at: Sun, 23 Jun 2024 23:12:26 GMT
+- request:
+    method: post
+    uri: https://api.hibob.com/v1/people
+    body:
+      encoding: UTF-8
+      string: '{"firstName":"Billie","surname":"Pagac","email":"billie.pagac@pinpoint.dev","work":{"site":"New
+        York (demo)","startDate":"2024-06-24"}}'
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - application/json
+      User-Agent:
+      - Ruby
+      Host:
+      - api.hibob.com
+      Content-Type:
+      - application/json
+      Authorization:
+      - "<HI_BOB_AUTHORIZATION>"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Sun, 23 Jun 2024 23:12:26 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '135'
+      Connection:
+      - keep-alive
+      Cf-Cache-Status:
+      - DYNAMIC
+      Set-Cookie:
+      - __cf_bm=Uu.whS0NRDzfkJl0wfljJjR3LHbW_lIqgeVRtyMnCTA-1719184346-1.0.1.1-5yA_kBWtUYdYMYlDGSXwqKCEr0gOx8GES0S.tTiNB06pKKEAXAtZc6R6UniCdPiVw4NJ5q86oSLzMPT6kp2XJw;
+        path=/; expires=Sun, 23-Jun-24 23:42:26 GMT; domain=.hibob.com; HttpOnly;
+        Secure; SameSite=None
+      Strict-Transport-Security:
+      - max-age=6
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 898829b5ef74bbc2-FRA
+    body:
+      encoding: UTF-8
+      string: '{"key":"validations.email.alreadyexists","error":"Email billie.pagac@pinpoint.dev
+        already exists","args":["billie.pagac@pinpoint.dev"]}'
+  recorded_at: Sun, 23 Jun 2024 23:12:26 GMT
+recorded_with: VCR 6.2.0
+...

@@ -1,0 +1,281 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://developers-test.pinpointhq.com/api/v1/applications/8863807?extra_fields%5Bapplications%5D=attachments
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - application/vnd.api+json
+      User-Agent:
+      - Ruby
+      Host:
+      - developers-test.pinpointhq.com
+      X-Api-Key:
+      - "<PINPOINT_API_KEY>"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 24 Jun 2024 07:59:30 GMT
+      Content-Type:
+      - application/vnd.api+json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Etag:
+      - W/"9d4fc5cc74b3bb9eef0679f9c25e1ac3"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Security-Policy-Report-Only:
+      - 'default-src ''self'' https:; font-src ''self'' https: data:; img-src ''self''
+        https: data:; object-src ''none''; media-src ''self'' https: blob:; script-src
+        ''self'' https: ''strict-dynamic'' ''nonce-fe75879d23692e9d2b0744a12b7a44c8'';
+        style-src ''self'' https: ''unsafe-inline''; connect-src ''self'' https: wss:;
+        base-uri ''none''; report-uri /csp_violation_reports'
+      Set-Cookie:
+      - LSW_WEB=LSW_WEB6; path=/
+      - _pinpoint_session=J0YbhGJ0d%2Bm10RoQUPvius7Kjg8u5DStSx89tTkFJkyk1qWv4z%2BcaJCYdH55PQ1LtwL3QOiUd01t9FAtRkjp5IdqspNkcvArP3b95FPUC3MTNndV4lvUE%2BxOXt3hpPq29xpmD7Z08GVIJwd40Wc7q9rXB7tOtfJT0dFuwKzsFQ%2BzGfi4ZTeqtUlgFYs5GVDkIFZOgAvBO8a%2By78BOYx8--XkwmqptSuVK6rejw--TahSNg3LAPPg%2BxJYWup4uw%3D%3D;
+        domain=.pinpointhq.com; path=/; expires=Mon, 24 Jun 2024 19:59:30 GMT; secure;
+        HttpOnly; SameSite=None
+      X-Request-Id:
+      - bfbeecf5-75ee-40aa-acdb-72905d087f42
+      X-Runtime:
+      - '0.047633'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Powered-By:
+      - cloud66
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"8863807","type":"applications","attributes":{"created_at":"2024-02-03T04:35:36+00:00","updated_at":"2024-04-18T06:04:29+00:00","hired_at":null,"internal_candidate":true,"job_id":"174766","locale":"en","stage_id":"1539024","rejected_at":null,"phone_iso2":"US","start_on":null,"is_demo":true,"first_name":"Williams","last_name":"Lockman","email":"williams.lockman@pinpoint.dev","phone":"+17080521228","date_of_birth":"2003-10-20","linkedin_url":null,"summary":"This
+        is an example application designed to help demonstrate Pinpoint to the team
+        at Developer Acme. Please completely disregard this application as it is for
+        demonstrative purposes only and will be automatically deleted in due course.","address1":"4271
+        Kayleen Inlet","address2":"Imelda Corners","town":"Lake Bricemouth","country":"Lesotho","postcode":"40126","preferred_pronouns":"(They/Them/Theirs)","channel_source":"Careers
+        site","full_name":"Williams Lockman","national_identifier":null,"channel":"in_store","concealed":false,"attachments":[{"context":"cv","filename":"tom_hacquoil.pdf","url":"https://pinpointhq.com/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBeDZhK0E9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--6a9cfa9457e57b0719c3f75de9aa960cce5227c0/tom_hacquoil.pdf"},{"context":"pdf_cv","filename":"tom_hacquoil.pdf","url":"https://pinpointhq.com/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBeDZhK0E9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--6a9cfa9457e57b0719c3f75de9aa960cce5227c0/tom_hacquoil.pdf"}]},"relationships":{"job":{"meta":{"included":false}},"stage":{"meta":{"included":false}},"onboarding_application":{"meta":{"included":false}},"offers":{"meta":{"included":false}},"answers":{"meta":{"included":false}},"custom_attributes":{"meta":{"included":false}},"scorecard_ratings":{"meta":{"included":false}},"scorecard_notes":{"meta":{"included":false}},"scorecard_answers":{"meta":{"included":false}},"comments":{"meta":{"included":false}}}},"meta":{}}'
+  recorded_at: Mon, 24 Jun 2024 07:59:30 GMT
+- request:
+    method: post
+    uri: https://api.hibob.com/v1/people
+    body:
+      encoding: UTF-8
+      string: '{"firstName":"Williams","surname":"Lockman","email":"williams.lockman@pinpoint.dev","work":{"site":"New
+        York (demo)","startDate":"2024-06-25"}}'
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - application/json
+      User-Agent:
+      - Ruby
+      Host:
+      - api.hibob.com
+      Content-Type:
+      - application/json
+      Authorization:
+      - "<HI_BOB_AUTHORIZATION>"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 24 Jun 2024 07:59:31 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '3667'
+      Connection:
+      - keep-alive
+      Referrer-Policy:
+      - origin-when-cross-origin, strict-origin-when-cross-origin
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - master-only
+      X-Ratelimit-Limit:
+      - '50'
+      X-Ratelimit-Remaining:
+      - '49'
+      X-Ratelimit-Reset:
+      - '1719216030'
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Set-Cookie:
+      - __cf_bm=Q8hCq2b1lof5Slolw7D7voenBtfW5Qswm1nIkxpAKEY-1719215971-1.0.1.1-HRbFm0E_ypnh_O46qhqvMFNOO1b27wZc9nh5jmgXK25IOUWzx4roquNYgjf.LAjl1Dhin9a_aYrPO0J2ech9Iw;
+        path=/; expires=Mon, 24-Jun-24 08:29:31 GMT; domain=.hibob.com; HttpOnly;
+        Secure; SameSite=None
+      Strict-Transport-Security:
+      - max-age=6
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 898b2dc9ffc93611-FRA
+    body:
+      encoding: ASCII-8BIT
+      string: '{"fullName":"Williams Lockman","creationDate":"2024-06-24","displayName":"Williams
+        Lockman","payroll":{"additionalPensionContribution":null,"timeSinceLastSalaryChange":null,"salary":{"monthlyPayment":null,"payPeriod":null,"yearlyPayment":null,"payment":{"currency":null},"activeEffectiveDate":null,"payFrequency":null},"taxCode":null,"entitlement":{"Season
+        ticket loans":{"amount":null},"Cycle to work":{"amount":null},"Company Car":{"amount":null},"Childcare
+        vouchers":{"amount":null},"Lunch vouchers":{"amount":null}},"deduction":{"Season
+        ticket loans":{"amount":null},"Cycle to work":{"amount":null},"Company Car":{"amount":null},"Childcare
+        vouchers":{"amount":null},"Lunch vouchers":{"amount":null}},"employment":{"hoursInDayNotWorked":9,"standardWorkingPattern":null,"fte":100,"type":null,"flsaCode":null,"actualWorkingPattern":{"workingPatternType":"hourly","days":{"sunday":0,"tuesday":9,"wednesday":9,"monday":9,"friday":9,"thursday":9,"saturday":0},"hoursPerDay":9,"workingPatternId":363430},"contract":"Full
+        time","calendarId":null,"salaryPayType":null,"personalWorkingPatternType":null,"workingPattern":null,"activeEffectiveDate":"2024-06-25","weeklyHours":45,"siteWorkingPattern":{"workingPatternType":"hourly","days":{"sunday":0,"tuesday":9,"wednesday":9,"monday":9,"friday":9,"thursday":9,"saturday":0},"hoursPerDay":9,"workingPatternId":363430}},"variable":{"Executive
+        bonus":{"companyPercent":null,"amount":null,"paymentPeriod":null,"individualPercent":null,"departmentPercent":null},"Bonus":{"companyPercent":null,"amount":null,"paymentPeriod":null,"individualPercent":null,"departmentPercent":null},"Commission":{"companyPercent":null,"amount":null,"paymentPeriod":null,"individualPercent":null,"departmentPercent":null}}},"personal":{"communication":{"skypeUsername":null,"slackUsername":null}},"state":"uninvited","creationDateTime":"2024-06-24T07:59:31.050325","employee":{"positionId":null,"payrollManager":null,"hrbp":null,"itAdmin":null,"jobLevelId":null,"buddy":null},"work":{"shortStartDate":"06-25","startDate":"2024-06-25","manager":null,"workPhone":null,"tenureDuration":null,"durationOfEmployment":null,"reportsToIdInCompany":null,"employeeIdInCompany":null,"reportsTo":null,"workMobile":null,"indirectReports":null,"department":null,"siteId":2474159,"tenureDurationYears":0,"tenureYears":null,"isManager":false,"title":null,"site":"New
+        York (Demo)","originalStartDate":"2024-06-25","activeEffectiveDate":"2024-06-25","directReports":null,"secondLevelManager":null,"daysOfPreviousService":0,"yearsOfService":0},"avatarUrl":null,"secondName":null,"about":{"foodPreferences":[],"socialData":{"linkedin":null,"twitter":null,"facebook":null},"superpowers":[],"hobbies":[],"about":null,"avatar":"https://media-process.hibob.com/image/upload/b_rgb:EB7A29/co_white,l_text:Arial_50_bold:WL,g_center/hibob/default-avatar/transparent_avatar.png?token=X19jbGRfdG9rZW5fXz1leHA9NDgzNDYyODAxNH5hY2w9KiUyZmhpYm9iJTJmZGVmYXVsdC1hdmF0YXIlMmZ0cmFuc3BhcmVudF9hdmF0YXIucG5nKn5obWFjPThlYWExNDdjOWEzNWQwZjg3ZmQ1YmJkZTRiYTA4ZjE1YzExZjYzNWQxMmVkNzRmZGE1NmIwZDU5MDg4YTJmOGE=&vendor=cloudinary"},"companyId":631640,"email":"williams.lockman@pinpoint.dev","surname":"Lockman","home":{"mobilePhone":null,"privateEmail":null,"privatePhone":null},"coverImageUrl":"https://media-process.hibob.com/image/upload/v1/hibob/public-image/cover/white_default_cover_image.png?token=X19jbGRfdG9rZW5fXz1leHA9MTczMDgwMTQ2NX5hY2w9KiUyZmhpYm9iJTJmcHVibGljLWltYWdlJTJmY292ZXIlMmZ3aGl0ZV9kZWZhdWx0X2NvdmVyX2ltYWdlLnBuZyp+aG1hYz0wMDQ5MGJkNjQ5N2Y2ZDQ5OGY5ZTVmZTMxYTYwNTI1NDA4ZTVhOGE4YWFmMWU3ZTZjYzVkNzlmNzVjODA3YTkw&vendor=cloudinary","id":"3397352260643062621","firstName":"Williams"}'
+  recorded_at: Mon, 24 Jun 2024 07:59:31 GMT
+- request:
+    method: post
+    uri: https://api.hibob.com/v1/docs/people/3397352260643062621/shared
+    body:
+      encoding: UTF-8
+      string: '{"documentName":"cv_pdf","documentUrl":"https://pinpointhq.com/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBeDZhK0E9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--6a9cfa9457e57b0719c3f75de9aa960cce5227c0/tom_hacquoil.pdf"}'
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - application/json
+      User-Agent:
+      - Ruby
+      Host:
+      - api.hibob.com
+      Content-Type:
+      - application/json
+      Authorization:
+      - "<HI_BOB_AUTHORIZATION>"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 24 Jun 2024 07:59:33 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '350'
+      Connection:
+      - keep-alive
+      Content-Security-Policy:
+      - default-src 'self'; script-src 'self' 'unsafe-inline' ; style-src 'self' 'unsafe-inline'
+      Referrer-Policy:
+      - origin-when-cross-origin, strict-origin-when-cross-origin
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Permitted-Cross-Domain-Policies:
+      - master-only
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Set-Cookie:
+      - __cf_bm=JO6gFHKM0FEiRFiS5.QW4mvPpYpaSwwk3cUZvubPYOs-1719215973-1.0.1.1-HxWk3tW7w7lgFjyJpRZxSu0ieFTyy36.cu_l3aLVgF2l7Aj.7N36YS9LnC4cWyziGivNYt5CmyaZvY1aO2lbrg;
+        path=/; expires=Mon, 24-Jun-24 08:29:33 GMT; domain=.hibob.com; HttpOnly;
+        Secure; SameSite=None
+      Strict-Transport-Security:
+      - max-age=6
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 898b2dd26a859007-FRA
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":"15587714","employeeId":"3397352260643062621","uploadedById":"SERVICE-11334","name":"cv_pdf","creationDate":"2024-06-24T07:59:33.381961","status":"Created","tags":[],"folderId":1047097,"mimeType":"application/pdf","fileId":20600447,"documentName":"cv_pdf","owner":{"id":"3397352260643062621"},"actionRequestDate":null,"actionCompleteDate":null}'
+  recorded_at: Mon, 24 Jun 2024 07:59:33 GMT
+- request:
+    method: post
+    uri: https://developers-test.pinpointhq.com/api/v1/comments
+    body:
+      encoding: UTF-8
+      string: '{"data":{"relationships":{"commentable":{"data":{"type":"applications","id":8863807}}},"type":"comments","attributes":{"body_text":"Record created with ID: 3397352260643062621"}}}'
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - application/vnd.api+json
+      User-Agent:
+      - Ruby
+      Host:
+      - developers-test.pinpointhq.com
+      X-Api-Key:
+      - "<PINPOINT_API_KEY>"
+  response:
+    status:
+      code: 422
+      message: Unprocessable Entity
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 24 Jun 2024 07:59:33 GMT
+      Content-Type:
+      - application/vnd.api+json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - no-cache
+      Content-Security-Policy-Report-Only:
+      - 'default-src ''self'' https:; font-src ''self'' https: data:; img-src ''self''
+        https: data:; object-src ''none''; media-src ''self'' https: blob:; script-src
+        ''self'' https: ''strict-dynamic'' ''nonce-1b76191f8c7fc25efb798d935a2555e7'';
+        style-src ''self'' https: ''unsafe-inline''; connect-src ''self'' https: wss:;
+        base-uri ''none''; report-uri /csp_violation_reports'
+      Set-Cookie:
+      - LSW_WEB=LSW_WEB6; path=/
+      - _pinpoint_session=zGT8xF%2FbL%2FfWmZC%2Flt8WZt83UnwSDytVPu60Gk0LJc%2Bl%2FI7CuoVqTMU3i6v46R%2FvLhn33%2B4lv3QpRaDlqlC9GGuB0XM%2BT5m%2BHDEqGflmmcK4VjYGTA2NXLStItODdlfIj6jidsC%2F3dJPRaSSPXPhYHDhMr0ohCyA5BuPRq41C0%2Bc67yd8Lq336RCRHpl0exTCGGFOu45avd9t3CH4doXkYLcaYQp6oXY2yaSAgTNHL7hKkSUABM75%2BbhTZC%2F9vnfoWb8--mda3vLD83EKZu4lu--SogvOf7SgTuM9sXc0njcrA%3D%3D;
+        domain=.pinpointhq.com; path=/; expires=Mon, 24 Jun 2024 19:59:33 GMT; secure;
+        HttpOnly; SameSite=None
+      X-Request-Id:
+      - 6e7be1ab-fac2-4992-bdb8-35fc4c8802d0
+      X-Runtime:
+      - '0.034205'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":"unprocessable_entity","status":"422","title":"Validation
+        Error","detail":"Commentable must exist","source":{"pointer":"/data/relationships/commentable"},"meta":{"attribute":"commentable","message":"must
+        exist","code":"blank"}},{"code":"unprocessable_entity","status":"422","title":"Validation
+        Error","detail":"Body text can''t be blank","source":{"pointer":"/data/attributes/body_text"},"meta":{"attribute":"body_text","message":"can''t
+        be blank","code":"blank"}}]}'
+  recorded_at: Mon, 24 Jun 2024 07:59:33 GMT
+recorded_with: VCR 6.2.0
