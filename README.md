@@ -24,12 +24,23 @@ SQLite has been selected for this project due to its simplicity and lightness wh
 
 ### HireApplicant Service
 - This class holds all the business logic of our process
-- It gets application details from Pinpont, creates Employee at HiBob, and then uploads cv, and adds comment to Pinpoints application
-- To communicate with external APIs with the help of wrapper classes: `ApiClients::HiBob::Client`, and `ApiClients::Pinpoint::Client`
-- Those clases are encapsulating API related information, such as validation, and parsing of received responses
+- It gets application details, creates Employee, and then uploads cv, and adds comment to Pinpoints application
+- To communicate with external APIs with the help of wrapper classes
+- Those classes are encapsulating API related information, such as validation, and parsing of received responses
 
 ### Tests
 - There is an integration test covering happy path of the whole process. It is using `VCR` for handling external calls
 - `HireApplicant` Service is covered with specs also using `VCR` covering various scenarios of successful, and failing external calls
 - `WebhookHandlerJob` is tested for parsing incoming payload, and checking if it has all requeired information. It is using mocked services to avoid making external calls
 - `WebhookController` is tested for processing of incoming requests, and queing them for processing
+
+### Starting App
+```ruby
+   bundle install
+   rails c
+```
+
+### Running Tests
+```ruby
+rake test
+```
